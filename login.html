@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    #Added styles to login page
+    body{
+  margin:0;
+  padding:0;
+  font-family: Arial;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  # change background color in styles section
+  background: linear-gradient(
+        135deg,
+        #ff6a00,
+        #ee0979,
+        #6a11cb,
+        #708cbd
+    );
+
+}
+
+.login-container{
+  background:white;
+  padding:40px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  width:300px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#007bff;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  background:#007bff;
+  color:white;
+  border:none;
+}
+#Added hover effect on button in styles sectiongit
+button:hover{
+  background:#0056b3;
+  cursor:pointer;
+  transform:scale(1.05);
+  transition:0.3s;
+}
+
+#fp{
+    text-align: right;
+    justify-content: right;
+    text-decoration:none;
+}
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Travel Portal Login</h2>
+
+    <form>
+      <!-- changes in placeholder in html section and background color in styles section -->
+  
+  <input type="text" placeholder="Enter Your Username">
+
+  <input type="password" placeholder="Enter Your Password">
+<!-- adding forgot password in html section and styles -->
+  <!-- Forgot Password -->
+  <div class="forgot-password">
+    <a href="#"><p id="fp">Forgot Password</p></a>
+  </div>
+
+  <button type="submit">Login</button>
+
+</form>
+  </div>
+  
+</body>
+</html>
